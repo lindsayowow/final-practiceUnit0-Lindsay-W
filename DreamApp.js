@@ -65,13 +65,13 @@ let ingrPastaFungi = [meatOrVeg[2], sauces[2], noodles[2]];
 
 console.log(entrees);
 console.log("**Cost:**  ", entreePrices);
-let firstDish = readline.question(`Please select an entree: \n`, entrees).toUpperCase(); // Example of template literals - Values, Data Types, and Operations
+let firstDish = readline.question(`Please select an entree: \n`, entrees).toUpperCase(); // Example of template literals and newline - Stringing Characters Together
 console.log(firstDish + " is selected.");
 
 let wantSwap = readline.question("Would you like to swap any ingredients? (yes/no) ").toUpperCase();
 
 if (wantSwap === "YES") {
-    // Nested conditional with 3 options
+    // Nested conditional with 3 options - example of control structures and logic
     if (firstDish === "CHICKEN ALFREDO") {
         console.log(ingrChxAlf);
     } else if (firstDish === "SPAGHETTI AND MEATBALLS") {
@@ -142,7 +142,7 @@ Prior to checkout, the app displays the complete order to the customer and asks 
 let orderSelection = {firstDish, firstIngSwap, onTheSide, addOnOption}; // Example of Creating and Using Objects
 console.log("Your complete order is: ", orderSelection); 
 
-const nameFull = readline.question(`Please enter your name:  `);
+const nameFull = readline.question(`Please enter your name:  `); // example of values, data types and operations (using const)
 
 /*In the checkout process, the customer is asked information including name, address, email, and phone number.
 The app totals the price of each dish plus markups, and displays for customer.
